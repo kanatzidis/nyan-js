@@ -13,7 +13,6 @@ function nyan(options = {}) {
     frames.forEach(function(e, i) {
       frames[i] = e.slice(17, 50);
       if(colors) {
-        console.log(typeof frames[i]);
         frames[i] = frames[i].map(function(row) {
           return row.split('').map(function(c) {
             // I don't think any characters are unaccounted for but you never know
